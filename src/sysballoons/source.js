@@ -1,7 +1,7 @@
 let audio;
 let source = `https://archive.org/download/WindowsVista.InboxMedium.SoundScheme/notify.mp3?tunnel=1`
 let balloonCount = 0;
-function sb_send(sb_title, sb_body, sb_icon) {
+function sba_send(sb_title, sb_body, sb_icon) {
     const balloonWrapper = $(`
         <div class="sb_wrapper">
             <div class="sb_balloon">
@@ -119,6 +119,7 @@ $(document).ready(function() {
             }
         </style>
     `);
+    setTimeout(() => sba_send("Hello, world!", "Telegram: @imancatt", `https://img.icons8.com/ios7/512/FFFFFF/telegram-app.png`), 1555);
 });
 
-window.sba_send = sb_send;
+window.sba_send = sba_send;
