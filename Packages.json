@@ -11,8 +11,8 @@
         "max_os_version": 400005,
         "depends": [],
         "iconFiles": {
-            "32x32": "$REPO_PATH$/src/sysballoons/i32.png",
-            "16x16": "$REPO_PATH$/src/sysballoons/i16.png"
+            "32x32": "$REPO_PATH$/src/sysballoons/32x32.png",
+            "16x16": "$REPO_PATH$/src/sysballoons/16x16.png"
         },
         "packageRoot": "$REPO_PATH$/src/sysballoons/"
     }
