@@ -119,7 +119,6 @@ $(document).ready(function() {
             }
         </style>
     `);
-    setTimeout(() => sba_send("Hello, world!", "Telegram: @imancatt", `https://img.icons8.com/ios7/512/FFFFFF/telegram-app.png`), 1555);
 });
 
 window.sba_send = sba_send;
