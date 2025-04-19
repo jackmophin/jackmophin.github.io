@@ -1,12 +1,1 @@
-  <style>
-        html {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            text-align: center ;
-        }
-    </style>
-    <p>Add this as a source in package manager.</p>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Font Chaos</title><link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat&family=Dancing+Script&family=Pacifico&family=Gloria+Hallelujah&family=Patrick+Hand&family=Shadows+Into+Light&family=Homemade+Apple&display=swap" rel="stylesheet"><style>p{white-space:pre-wrap;color:#fff;user-select:none}body{overflow:hidden;margin:0;height:100vh;display:flex;justify-content:center;align-items:center;text-align:center;font-size:24px;background-color:#000;cursor:none}span{display:inline-block;transition:all 1s ease}#mirrorCursor{position:absolute;background-image:url(https://jackmophin.github.io/local/unsorted/cursor.svg);background-repeat:none;width:18px;height:30px;pointer-events:none;transform:translate(-50%,-50%);transition:all .1s ease}</style></head><body><p>Jack Morphin</p><div id="mirrorCursor"></div><script>const fonts=["Bad Script","Caveat","Dancing Script","Gloria Hallelujah","Patrick Hand","Shadows Into Light","Homemade Apple"];function getRandomFont(){let e=[...fonts];return e[Math.floor(Math.random()*e.length)]}document.querySelectorAll("p").forEach(e=>{let t=e.textContent.split("");e.innerHTML="",t.forEach(t=>{let n=document.createElement("span");n.innerHTML=" "===t?"&nbsp;":t,n.style.fontFamily=getRandomFont(),e.appendChild(n)})});let intervalTime=.5,counter=1;function changeFont(){let e=document.querySelectorAll("p span");if(0===e.length)return;let t=e[Math.floor(Math.random()*e.length)];t.style.fontFamily=getRandomFont(),t.style.textShadow="0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6)",counter=counter>=100?1:counter+1,intervalTime*=1.03,clearInterval(timer),intervalTime>=100||(timer=setInterval(changeFont,intervalTime))}let timer=setInterval(changeFont,intervalTime);document.addEventListener("mousemove",e=>{let t=document.getElementById("mirrorCursor"),n=window.innerWidth,r=window.innerHeight;t.style.left=`${0-e.pageX+n}px`,t.style.top=`${0-e.pageY+r}px`});</script></body></html>
