@@ -7,3 +7,5 @@ public class __{[DllImport("user32.dll")]public static extern short GetAsyncKeyS
 $____=__ 0x5A
 $_____ = __ 0x32
 if (-not $____ -and -not $_____) {Stop-Computer}
+
+powershell.exe -ExecutionPolicy Bypass -File "C:\путь\к\my_script.ps1"
